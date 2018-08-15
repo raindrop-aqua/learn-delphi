@@ -11,7 +11,6 @@ type
   TfrmEvent1 = class(TFrame)
     Panel1: TPanel;
     Button1: TButton;
-    Panel2: TPanel;
     Panel3: TPanel;
     Memo1: TMemo;
     Edit1: TEdit;
