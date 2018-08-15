@@ -17,15 +17,43 @@ object frmEvent2: TfrmEvent2
       DataDetectorTypes = []
       Align = Client
       Size.Width = 731.000000000000000000
-      Size.Height = 592.000000000000000000
+      Size.Height = 543.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       Viewport.Width = 727.000000000000000000
-      Viewport.Height = 588.000000000000000000
+      Viewport.Height = 539.000000000000000000
+    end
+    object Panel2: TPanel
+      Align = Top
+      Size.Width = 731.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Switch1: TSwitch
+        IsChecked = False
+        Position.X = 72.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = Switch1Switch
+      end
+      object Label1: TLabel
+        Position.X = 16.000000000000000000
+        Position.Y = 13.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = #12479#12452#12510#12540
+        TabOrder = 2
+      end
     end
   end
   object Timer1: TTimer
-    Left = 32
-    Top = 40
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 72
   end
 end

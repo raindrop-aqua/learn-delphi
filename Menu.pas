@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.Layouts, FMX.ListBox;
 
 type
-  TForm1 = class(TForm)
+  TfrmMenu = class(TForm)
     Panel1: TPanel;
     ListBox1: TListBox;
     Splitter1: TSplitter;
@@ -23,16 +23,16 @@ type
   end;
 
 var
-  Form1: TForm1;
+  frmMenu: TfrmMenu;
 
 implementation
 
 uses
-  Blank, UISample, Event1;
+  Blank, UISample, Event1, Event2;
 
 {$R *.fmx}
 
-procedure TForm1.Button1Click(Sender: TObject);
+procedure TfrmMenu.Button1Click(Sender: TObject);
 var
   item: TListBoxItem;
 begin
@@ -45,12 +45,15 @@ begin
   end;
 
   if not Assigned(item) then begin
-  end else if item.Text = 'Blank' then begin
     frame := Blank.TfrmBlank.Create(self);
   end else if item.Text = 'UI Sample' then begin
     frame := UISample.TfrmUISample.Create(self);
   end else if item.Text = 'Event1' then begin
     frame := Event1.TfrmEvent1.Create(self);
+  end else if item.Text = 'Event2' then begin
+    frame := Event2.TfrmEvent2.Create(self);
+  end else begin
+    frame := Blank.TfrmBlank.Create(self);
   end;
 
   frame.Align := TAlignLayout.Client;

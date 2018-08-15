@@ -3,7 +3,8 @@ unit Event1;
 interface
 
 uses
-  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants, 
+  System.SysUtils, System.Types, System.UITypes, System.Classes,
+  System.Variants,
   FMX.Types, FMX.Graphics, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.StdCtrls,
   FMX.Edit, FMX.ScrollBox, FMX.Memo, FMX.Controls.Presentation;
 
@@ -59,7 +60,7 @@ procedure TfrmEvent1.Memo1KeyDown(Sender: TObject; var Key: Word;
   var KeyChar: Char; Shift: TShiftState);
 begin
   Edit1.Text := KeyChar;
-  Edit2.text := Key.ToString;
+  Edit2.Text := Key.ToString();
 end;
 
 end.
