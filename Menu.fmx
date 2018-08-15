@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 790
+  ClientWidth = 924
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Left
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 780.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 193.000000000000000000
+      Size.Height = 755.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      DisableFocusEffect = True
+      Items.Strings = (
+        'Blank'
+        'UI Sample')
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 189.000000000000000000
+      Viewport.Height = 751.000000000000000000
+    end
+    object Button1: TButton
+      Align = Bottom
+      Position.Y = 755.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Start'
+      OnClick = Button1Click
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Left
+    Cursor = crHSplit
+    MinSize = 20.000000000000000000
+    Position.X = 198.000000000000000000
+    ShowGrip = False
+    Size.Width = 8.000000000000000000
+    Size.Height = 790.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object pnlMain: TPanel
+    Align = Client
+    Size.Width = 718.000000000000000000
+    Size.Height = 790.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+end
