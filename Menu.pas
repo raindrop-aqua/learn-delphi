@@ -28,7 +28,7 @@ var
 implementation
 
 uses
-  Blank, UISample, Event1, Event2;
+  Blank, UISample, Event1, Event2, Clock;
 
 {$R *.fmx}
 
@@ -52,6 +52,8 @@ begin
     frame := Event1.TfrmEvent1.Create(self);
   end else if item.Text = 'Event2' then begin
     frame := Event2.TfrmEvent2.Create(self);
+  end else if item.Text = 'Clock' then begin
+    frame := Clock.TfrmClock.Create(self);
   end else begin
     frame := Blank.TfrmBlank.Create(self);
   end;

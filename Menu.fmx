@@ -30,7 +30,8 @@ object frmMenu: TfrmMenu
         'Blank'
         'UI Sample'
         'Event1'
-        'Event2')
+        'Event2'
+        'Clock')
       DefaultItemStyles.ItemStyle = ''
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
