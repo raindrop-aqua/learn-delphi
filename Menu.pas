@@ -28,7 +28,7 @@ var
 implementation
 
 uses
-  UISample, Blank;
+  Blank, UISample, Event1;
 
 {$R *.fmx}
 
@@ -49,6 +49,8 @@ begin
     frame := Blank.TfrmBlank.Create(self);
   end else if item.Text = 'UI Sample' then begin
     frame := UISample.TfrmUISample.Create(self);
+  end else if item.Text = 'Event1' then begin
+    frame := Event1.TfrmEvent1.Create(self);
   end;
 
   frame.Align := TAlignLayout.Client;

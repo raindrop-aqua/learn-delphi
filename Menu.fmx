@@ -7,7 +7,7 @@ object Form1: TForm1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  DesignerMasterStyle = 0
+  DesignerMasterStyle = 3
   object Panel1: TPanel
     Align = Left
     Margins.Left = 5.000000000000000000
@@ -28,12 +28,13 @@ object Form1: TForm1
       DisableFocusEffect = True
       Items.Strings = (
         'Blank'
-        'UI Sample')
+        'UI Sample'
+        'Event1')
       DefaultItemStyles.ItemStyle = ''
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
-      Viewport.Width = 189.000000000000000000
-      Viewport.Height = 751.000000000000000000
+      Viewport.Width = 193.000000000000000000
+      Viewport.Height = 755.000000000000000000
     end
     object Button1: TButton
       Align = Bottom
