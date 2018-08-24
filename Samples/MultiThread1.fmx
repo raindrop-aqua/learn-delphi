@@ -1,0 +1,37 @@
+object frmMultiThread1: TfrmMultiThread1
+  Size.Width = 663.000000000000000000
+  Size.Height = 590.000000000000000000
+  Size.PlatformDefault = False
+  object Button1: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 69.000000000000000000
+    Size.Width = 152.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = #30452#21015
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 40.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 152.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = #20006#21015
+    OnClick = Button2Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 216.000000000000000000
+    Position.Y = 69.000000000000000000
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 216.000000000000000000
+    Position.Y = 120.000000000000000000
+  end
+end

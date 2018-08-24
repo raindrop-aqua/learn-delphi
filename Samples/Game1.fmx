@@ -1,0 +1,28 @@
+object frmGame1: TfrmGame1
+  Size.Width = 700.000000000000000000
+  Size.Height = 709.000000000000000000
+  Size.PlatformDefault = False
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 48.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    OnSwitch = Switch1Switch
+  end
+  object Circle1: TCircle
+    Position.X = 88.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 528
+    Top = 64
+  end
+end

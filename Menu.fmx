@@ -31,12 +31,14 @@ object frmMenu: TfrmMenu
         'UI Sample'
         'Event1'
         'Event2'
-        'Clock')
+        'Clock'
+        'Game1'
+        'Multi Thread1')
       DefaultItemStyles.ItemStyle = ''
       DefaultItemStyles.GroupHeaderStyle = ''
       DefaultItemStyles.GroupFooterStyle = ''
-      Viewport.Width = 189.000000000000000000
-      Viewport.Height = 751.000000000000000000
+      Viewport.Width = 193.000000000000000000
+      Viewport.Height = 755.000000000000000000
     end
     object Button1: TButton
       Align = Bottom

@@ -8,7 +8,9 @@ uses
   Blank in 'Samples\Blank.pas' {frmBlank: TFrame},
   Event1 in 'Samples\Event1.pas' {frmEvent1: TFrame},
   Event2 in 'Samples\Event2.pas' {frmEvent2: TFrame},
-  Clock in 'Samples\Clock.pas' {frmClock: TFrame};
+  Clock in 'Samples\Clock.pas' {frmClock: TFrame},
+  Game1 in 'Samples\Game1.pas' {frmGame1: TFrame},
+  MultiThread1 in 'Samples\MultiThread1.pas' {frmMultiThread1: TFrame};
 
 {$R *.res}
 

@@ -28,7 +28,7 @@ var
 implementation
 
 uses
-  Blank, UISample, Event1, Event2, Clock;
+  Blank, UISample, Event1, Event2, Clock, Game1, MultiThread1;
 
 {$R *.fmx}
 
@@ -40,23 +40,29 @@ begin
   item := ListBox1.Selected;
 
   if Assigned(frame) then begin
-    frame.Destroy;
+    frame.Free;
     frame := nil;
   end;
 
   if not Assigned(item) then begin
     frame := Blank.TfrmBlank.Create(self);
   end else if item.Text = 'UI Sample' then begin
-    frame := UISample.TfrmUISample.Create(self);
+    frame := TfrmUISample.Create(self);
   end else if item.Text = 'Event1' then begin
-    frame := Event1.TfrmEvent1.Create(self);
+    frame := TfrmEvent1.Create(self);
   end else if item.Text = 'Event2' then begin
-    frame := Event2.TfrmEvent2.Create(self);
+    frame := TfrmEvent2.Create(self);
   end else if item.Text = 'Clock' then begin
-    frame := Clock.TfrmClock.Create(self);
+    frame := TfrmClock.Create(self);
+  end else if item.Text = 'Game1' then begin
+    frame := TfrmGame1.Create(self);
+  end else if item.Text = 'Multi Thread1' then begin
+    frame := TfrmMultiThread1.Create(self);
   end else begin
     frame := Blank.TfrmBlank.Create(self);
   end;
+
+
 
   frame.Align := TAlignLayout.Client;
   frame.Parent := pnlMain;
