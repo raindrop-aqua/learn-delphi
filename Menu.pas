@@ -28,7 +28,7 @@ var
 implementation
 
 uses
-  Blank, UISample, Event1, Event2, Clock, Game1, MultiThread1;
+  Blank, UISample, Event1, Event2, Clock, Game1, MultiThread1, MultiThread2;
 
 {$R *.fmx}
 
@@ -58,11 +58,11 @@ begin
     frame := TfrmGame1.Create(self);
   end else if item.Text = 'Multi Thread1' then begin
     frame := TfrmMultiThread1.Create(self);
+  end else if item.Text = 'Multi Thread2' then begin
+    frame := TfrmMultiThread2.Create(self);
   end else begin
     frame := Blank.TfrmBlank.Create(self);
   end;
-
-
 
   frame.Align := TAlignLayout.Client;
   frame.Parent := pnlMain;

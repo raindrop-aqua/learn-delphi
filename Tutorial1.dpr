@@ -10,7 +10,9 @@ uses
   Event2 in 'Samples\Event2.pas' {frmEvent2: TFrame},
   Clock in 'Samples\Clock.pas' {frmClock: TFrame},
   Game1 in 'Samples\Game1.pas' {frmGame1: TFrame},
-  MultiThread1 in 'Samples\MultiThread1.pas' {frmMultiThread1: TFrame};
+  MultiThread1 in 'Samples\MultiThread1.pas' {frmMultiThread1: TFrame},
+  MultiThread2 in 'Samples\MultiThread2.pas' {frmMultiThread2: TFrame},
+  Generics1 in 'Samples\Generics1.pas' {Frame1: TFrame};
 
 {$R *.res}
 
